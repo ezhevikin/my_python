@@ -1,7 +1,12 @@
 #!/bin/python3
 
 import subprocess
+import sh
 
+password = 'password'
+
+with sh.contrib.sudo(password, _with=True):
+    print(ls("/root"))
 #subprocess.run(["sudo", "apt", "-y", "install", "guake"])
 
 #list_files = subprocess.run(["sudo", "mkdir", "/home/temp"]) #создание временной папки для файлов
@@ -25,3 +30,5 @@ subprocess.run(["sudo tar -xf /home/user/my_project/download/cades.tar.gz -C /ho
 
 #subprocess.run(["sudo dpkg -i /home/temp/install_pack/*/*.deb"], shell=True)
 print("Hello")
+print("Hello")
+
