@@ -9,3 +9,4 @@ disk_usage = psutil.disk_usage("/").percent
 print(f"CPU usage: {cpu_usage}%")
 print(f"Memory usage: {memory_usage}%")
 print(f"Disk usage: {disk_usage}%")
+print(f"Hello")
