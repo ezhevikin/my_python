@@ -25,4 +25,3 @@ subprocess.run(["sudo tar -xf /home/user/my_project/download/cades.tar.gz -C /ho
 
 #subprocess.run(["sudo dpkg -i /home/temp/install_pack/*/*.deb"], shell=True)
 print("Hello")
-print("Hello")
