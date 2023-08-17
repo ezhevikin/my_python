@@ -8,7 +8,7 @@ import subprocess
 #list_files = subprocess.run(["sudo", "mkdir", "/home/temp/install_pack"])
 
 #скачивание файлов для установки
-#subprocess.run(["wget", "-O", "/home/temp/cades.tar.gz", "https://cryptopro.ru/products/cades/plugin/get_2_0/cades-linux-amd64.tar.gz"])
+subprocess.run(["wget", "-O", "/home/temp/cades.tar.gz", "https://cryptopro.ru/products/cades/plugin/get_2_0/cades-linux-amd64.tar.gz"])
 
 #распаковка скачанного архива в папку /home/temp
 #subprocess.run(["sudo", "tar", "-xf", "/home/temp/cades.tar.gz", "-C", "/home/temp/install_pack"])
