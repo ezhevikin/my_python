@@ -8,11 +8,12 @@ import subprocess
 #list_files = subprocess.run(["sudo", "mkdir", "/home/temp/install_pack"])
 
 #скачивание файлов для установки
-subprocess.run(["wget", "-O", "/home/temp/cades.tar.gz", "https://cryptopro.ru/products/cades/plugin/get_2_0/cades-linux-amd64.tar.gz"])
+subprocess.run(["mkdir /home/user/my_project/download"], shell=True)
+subprocess.run(["wget", "-O", "/home/user/my_project/download/cades.tar.gz", "https://cryptopro.ru/products/cades/plugin/get_2_0/cades-linux-amd64.tar.gz"])
 
 #распаковка скачанного архива в папку /home/temp
-#subprocess.run(["sudo", "tar", "-xf", "/home/temp/cades.tar.gz", "-C", "/home/temp/install_pack"])
-subprocess.run(["sudo tar -xf /home/temp/cades.tar.gz -C /home/temp/install_pack"], shell = True)
+# subprocess.run(["sudo", "tar", "-xf", "/home/user/my_pproject/download/cades.tar.gz", "-C", "/home/user/my_project"])
+subprocess.run(["sudo tar -xf /home/user/my_project/download/cades.tar.gz -C /home/user/my_project"], shell = True)
 
 #print("-----------------------------install CRYPTOPRO")
 #subprocess.run(["sh /home/temp/crypto/install.sh lsb-cprocsp-kc1 cprocsp-rdr-gui-gtk cprocsp-cptools-gtk cprocsp-stunnel lsb-cprocsp-pkcs11"], shell=True)
